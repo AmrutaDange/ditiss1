@@ -1,4 +1,5 @@
 #! /bin/bash
 # list all users accounts using the /etc/passwd file
 cat /etc/passwd | awk -F: '{print $1," ",$6}'
+chmod u-rx bashscript.bash
 echo "$SHELL" 
